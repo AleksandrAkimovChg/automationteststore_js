@@ -27,19 +27,19 @@ jobs:
         run: npm ci
 
       - name: Npx run
-        run: npx cypress run --browser=chrome
+        run: npx cypress run --headless
 
       - name: Create test summary
         uses: test-summary/action@v1.0
         if: always()
         with:
-          paths: reports/*.xml
+          paths: ./cypress/reports/junit/*.xml
 
       - name: Publish test results
         uses: EnricoMi/publish-unit-test-result-action@v1
         if: always()
         with:
-          files: "reports/*.xml"
+          files: "./cypress/reports/junit/*.xml"
 
       - name: Artifacts
         uses: actions/upload-artifact@v2
