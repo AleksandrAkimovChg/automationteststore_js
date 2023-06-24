@@ -2,6 +2,6 @@
 
 describe('automationteststore', () => {
     it('verify ', function() {
-      cy.visite('https://automationteststore.com/');
+      cy.visit('https://automationteststore.com/');
     });
 });
