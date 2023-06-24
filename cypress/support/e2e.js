@@ -15,23 +15,9 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import './globalHooks'
+
 Cypress.on('uncaught:exception', () => false)
-
-Cypress.on('window:before:load', function (win) {
-    const original = win.EventTarget.prototype.addEventListener
-
-    win.EventTarget.prototype.addEventListener = function () {
-        if (arguments && arguments[0] === 'beforeunload') {
-            return
-        }
-        return original.apply(this, arguments)
-    }
-
-    Object.defineProperty(win, 'onbeforeunload', {
-        get: function () { },
-        set: function () { }
-    })
-})
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
