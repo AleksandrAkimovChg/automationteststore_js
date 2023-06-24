@@ -9,6 +9,10 @@ jobs:
     name: 'Run tests'
     runs-on: ubuntu-latest
 
+    permissions:
+      checks: write
+      pull-requests: write
+
     strategy:
       matrix:
         node-version: [16.x]
