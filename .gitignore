@@ -2,6 +2,9 @@
 logs
 *.log
 
+# IDEs and editors
+.idea
+
 # Runtime data
 pids
 *.pid
@@ -32,6 +35,8 @@ cypress/e2e/1-getting-started
 cypress/e2e/2-advanced-examples
 
 reports
+mochawesomeReports
 cypress/downloads
 
-cypress.env.json
+.DS_Store
+cypress/.DS_Store
