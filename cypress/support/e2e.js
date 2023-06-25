@@ -15,7 +15,11 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
-import './globalHooks'
+
+
+import "cypress-real-events";
+import 'cypress-mochawesome-reporter/register';
+import 'cypress-plugin-api';
 
 Cypress.on('uncaught:exception', () => false)
 
