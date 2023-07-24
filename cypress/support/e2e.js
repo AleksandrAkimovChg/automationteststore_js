@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+import './globalHooks'
 
 
 import "cypress-real-events";

@@ -1,0 +1,16 @@
+
+{
+  "firstName": "firstname",
+  "lastName": "lastname",
+  "email": "email",
+  "telephone": "telephone",
+  "fax": "fax",
+  "company":  "company",
+  "address1": "address_1",
+  "address2": "address_2",
+  "city": "city",
+  "zipCode": "postcode",
+  "loginName": "loginname",
+  "password": "password",
+  "passwordConfirm": "confirm"
+}
